@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Gif Live Wallpaper</string>
+    <string name="cancel">CANCEL</string>
+    <string name="set">SET</string>
+    <string name="share_via">Share via</string>
+    <string name="description">Set your home screen live wallpaper as animated gif picture.</string>
+    <string name="info_message">Please set Gif Live Wallpaper from live wallpaper picker list. </string>
+    <string name="share_subject">I like Gif Live Wallpaper app, please use this app.</string>
+
+</resources>

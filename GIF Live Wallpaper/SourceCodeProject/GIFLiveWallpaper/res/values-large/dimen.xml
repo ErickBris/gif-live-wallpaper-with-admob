@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="view_left_right_margin">20dip</dimen>
+    <dimen name="gif_image_height_width">200dip</dimen>
+    <dimen name="bottom_container_view_height">160dip</dimen>
+    <dimen name="button_height">45dip</dimen>
+    <dimen name="button_width">120dip</dimen>
+    <dimen name="button_margin">30dip</dimen>
+    <dimen name="icon_width_height">55dip</dimen>
+    <dimen name="button_text_size">20sp</dimen>
+    <dimen name="message_text_size">16sp</dimen>
+
+</resources>

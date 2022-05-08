@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="gif_image_height_width">200dip</dimen>
+    <dimen name="bottom_container_view_height">160dip</dimen>
+    <dimen name="view_left_right_padding">10dip</dimen>
+    <dimen name="view_left_right_margin">15dip</dimen>
+    <dimen name="button_stroke_width">1.5dip</dimen>
+    <dimen name="button_round">10dip</dimen>
+    <dimen name="button_height">40dip</dimen>
+    <dimen name="button_width">110dip</dimen>
+    <dimen name="button_margin">30dip</dimen>
+    <dimen name="icon_width_height">50dip</dimen>
+    <dimen name="button_text_size">18sp</dimen>
+    <dimen name="message_text_size">12sp</dimen>
+
+</resources>

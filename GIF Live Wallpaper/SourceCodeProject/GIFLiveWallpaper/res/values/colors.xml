@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Colors used in whole application -->
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="screen_bg_color">#648609</color>
+    <color name="button_text_color">#ffffff</color>
+    <color name="message_text_color">#424242</color>
+    <color name="bottom_bar_color">#AAFFFFFF</color>
+    <color name="button_border_color">#0006ff</color>
+    <color name="button_normal_color">#ffa200</color>
+    <color name="button_selected_color">#80ac0b</color>
+    <color name="icons_selector_color">#AAFFFFFF</color>
+
+</resources>

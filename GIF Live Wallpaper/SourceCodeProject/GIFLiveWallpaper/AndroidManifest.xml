@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sale.app.livewallpaper.gif"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:maxSdkVersion="19"
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-feature android:name="android.software.live_wallpaper" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".GifLiveWallpaperApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <service
+            android:name=".service.LiveWallpaperService"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_WALLPAPER" >
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/live_wallpaper" />
+        </service>
+
+        <activity
+            android:name=".activity.HomeActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+    </application>
+
+</manifest>

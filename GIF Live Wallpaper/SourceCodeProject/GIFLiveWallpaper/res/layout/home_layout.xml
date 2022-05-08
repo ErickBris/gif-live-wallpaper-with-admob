@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/screen_bg_color" >
+
+    <RelativeLayout
+        android:id="@+id/more_app_container_view"
+        android:layout_width="@dimen/icon_width_height"
+        android:layout_height="@dimen/icon_width_height"
+        android:layout_margin="@dimen/view_left_right_margin"
+        android:background="@drawable/icons_selector" >
+
+        <ImageView
+            android:id="@+id/more_app_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_action_process_start" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/share_container_view"
+        android:layout_width="@dimen/icon_width_height"
+        android:layout_height="@dimen/icon_width_height"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/view_left_right_margin"
+        android:background="@drawable/icons_selector" >
+
+        <ImageView
+            android:id="@+id/share_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_action_share" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/gif_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/share_container_view"
+        android:layout_centerHorizontal="true"
+        android:background="@raw/gif_image"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_container_view"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bottom_container_view_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bottom_bar_color" >
+
+        <RelativeLayout
+            android:id="@+id/bottom_ads_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contents_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/bottom_ads_view" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <LinearLayout
+                    android:id="@+id/button_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="@dimen/view_left_right_padding"
+                    android:paddingTop="@dimen/view_left_right_padding" >
+
+                    <Button
+                        android:id="@+id/cancel_button"
+                        style="@style/ButtonTextStyle"
+                        android:layout_width="@dimen/button_width"
+                        android:layout_height="@dimen/button_height"
+                        android:background="@drawable/button_selector"
+                        android:text="@string/cancel" />
+
+                    <Button
+                        android:id="@+id/set_button"
+                        style="@style/ButtonTextStyle"
+                        android:layout_width="@dimen/button_width"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_marginLeft="@dimen/button_margin"
+                        android:background="@drawable/button_selector"
+                        android:text="@string/set" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/info_textview"
+                    style="@style/InfoTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/button_layout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/view_left_right_margin"
+                    android:layout_marginRight="@dimen/view_left_right_margin"
+                    android:gravity="center"
+                    android:text="@string/info_message" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
